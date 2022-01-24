@@ -62,6 +62,7 @@ spec:
     stage('Deploy Dev') {
       steps {
         container('kubectl') {
+           sh "gcloud container clusters get-credentials cluster-2 --zone us-central1-c --project useful-cathode-334010"
           
          
           
