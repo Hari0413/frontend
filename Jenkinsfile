@@ -12,7 +12,7 @@ pipeline {
 
   agent {
     kubernetes {
-      label 'shipping'
+      label 'frontend'
       defaultContainer 'jnlp'
       yaml """
 apiVersion: v1
